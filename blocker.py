@@ -57,7 +57,7 @@ endhr = int(input("Please enter your ending hour of working hour: "))
 count = int(input("Enter the number of websites to be blocked during working hours: "))
 
 for i in range(count):
-    Website = str(input("Enter the website url: "))
+    Website = str(input("Enter the website url (Do not use URL) Example- www.youtube.com :-  "))
     Websites.append("127.0.0.1 " + Website + "\n")
 
 while True:
