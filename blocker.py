@@ -5,7 +5,7 @@ from datetime import datetime
 def WindowsBlocker(Websites):
     with open(r"C:\Windows\System32\drivers\etc\hosts", "a") as hosts:
         hosts.writelines(Websites)
-        print("Websites blocked!")
+        print("Websites blocked! ", Websites)
 
 def WindowsUnblocker(Websites):
     Clean = []
@@ -29,7 +29,7 @@ def WindowsUnblocker(Websites):
 def MacBlocker(Websites):
     with open(r"/etc/hosts", "a") as hosts:
         hosts.writelines(Websites)
-        print("Websites blocked!")
+        print("Websites blocked! ", Websites)
 
 def MacUnblocker(Websites):
     Clean = []
